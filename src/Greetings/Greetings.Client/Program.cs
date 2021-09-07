@@ -5,9 +5,9 @@ using Grpc.Core;
 
 namespace Greetings.Client
 {
-    class Program
+    static class Program
     {
-        static async Task Main()
+        private static async Task Main()
         {
             const string url = "localhost:5000";
             var channel = new Channel(url, ChannelCredentials.Insecure);
